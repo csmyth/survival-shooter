@@ -3275,6 +3275,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2016930724}
   - 95: {fileID: 2016930725}
+  - 54: {fileID: 2016930726}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3313,6 +3314,21 @@ Animator:
   m_ApplyRootMotion: 1
   m_HasTransformHierarchy: 0
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!54 &2016930726
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016930723}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: Infinity
+  m_AngularDrag: Infinity
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 84
+  m_CollisionDetection: 0
 --- !u!1 &2099701416
 GameObject:
   m_ObjectHideFlags: 0
