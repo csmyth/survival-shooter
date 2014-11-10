@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	}
 
-	// Note to self: Move, Turning, and Animation are separate functions to increase modularity
+	// Note to self: Move, Turning, and Animating are separate functions to increase modularity
 
 	void Move(float h, float v) {
 		movement.Set (h, 0f, v);			// x and z components are along the ground. We don't want the player to fly, so no y component
@@ -60,5 +60,11 @@ public class PlayerMovement : MonoBehaviour {
 			Quaternion newRotation = Quaternion.LookRotation (playerToMouse); 
 			playerRigidbody.MoveRotation (newRotation);
 		}
+	}
+
+	// Requires parameters because walking or idle depends on input
+	void Animating(float h, float v) {
+		bool walking = h != 0f || v != 0f;			// We're walking if there's any input in any direction
+		anim.SetBool ("IsWalking", walking);
 	}
 }
