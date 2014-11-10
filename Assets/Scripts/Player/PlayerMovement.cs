@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour {
 		float h = Input.GetAxisRaw ("Horizontal");			// Raw so that values will only be -1, 0, 1. Therefore, no gradual increase to full speed
 		float v = Input.GetAxisRaw ("Vertical");
 
+		Move (h, v);
+		Turning ();
+		Animating (h, v);
 	}
 
 	// Note to self: Move, Turning, and Animating are separate functions to increase modularity
