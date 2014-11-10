@@ -3276,6 +3276,7 @@ GameObject:
   - 4: {fileID: 2016930724}
   - 95: {fileID: 2016930725}
   - 54: {fileID: 2016930726}
+  - 136: {fileID: 2016930727}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3329,6 +3330,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!136 &2016930727
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2016930723}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: .5
+  m_Height: 1.20000005
+  m_Direction: 1
+  m_Center: {x: .200000003, y: .600000024, z: 0}
 --- !u!1 &2099701416
 GameObject:
   m_ObjectHideFlags: 0
