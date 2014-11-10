@@ -8,4 +8,11 @@ public class PlayerMovement : MonoBehaviour {
 	Rigidbody playerRigidbody;		// Stores rigidbody applied to player
 	int floorMask; 					// Used to tell raycast to only hit floor
 	float camRayLength = 100f;		// Length of ray cast from camera
+
+	// Used to set up references, whether script is enabled or not
+	void Awake() {
+		floorMask = LayerMask.GetMask ("Floor");
+		anim = GetComponent <Animator> ();
+		playerRigidbody = GetComponent <Rigidbody> ();
+	}
 }
